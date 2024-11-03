@@ -1,3 +1,4 @@
+Docker and Docker Compose: Make sure Docker is installed on your machine, as Docker Compose is included with Docker Desktop on Windows and Mac. On Linux, you may need to install Docker Compose separately.
 In this setup:
 web: The web service uses a custom image (my-web-app:latest) that’s built from a Dockerfile in the ./webapp directory. This service exposes port 5000 to the host and sets environment variables for the database connection.
 db: The database service uses the MySQL 8.0 image and defines a root password and database name via environment variables. The database data is stored in a Docker volume called db-data for persistence.
